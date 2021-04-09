@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{minted}
+
+
+\begin{document}
+\title{Pretty Printing Using Minted in \LaTeX}
+\author{Nauman \\ recluze@gmail.com}
+\maketitle
+
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=5pt,
+               gobble=2,
+               frame=lines,
+               framesep=2mm]{csharp}
+  string title = "This is a Unicode π in the sky"
+  /*
+  Defined as $\pi=\lim_{n\to\infty}\frac{P_n}{d}$ where $P$ is the perimeter
+  of an $n$-sided regular polygon circumscribing a
+  circle of diameter $d$.
+  */
+  const double pi = 3.1415926535
+\end{minted}
+
+
+
+\newminted{cpp}{linenos}
+\begin{cppcode}
+template <typename T>
+ T id(T value) {
+  return value;
+ }
+\end{cppcode}
+
+
+\newpage
+
+
+\inputminted[linenos,
+               numbersep=5pt,
+               frame=lines,
+               framesep=2mm]{java}{Sign.java}
+
+
+
+\end{document}

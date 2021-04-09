@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+
+\begin{document}
+\title{Typesetting Mathematics in \LaTeX}
+\author{Nauman \\ recluze@gmail.com}
+\maketitle
+
+
+\section{Introduction} 
+\LaTeX\ is extremely powerful when it comes to typesetting mathematics. It's one of the core strengths of this system. 
+
+\section{Displaying Mathematics}
+There are two ways of displaying maths. One is \emph{inline} and the other is \emph{display} format -- in which the whole math sits on its own set of lines.
+
+
+\subsection{Inline Mode}
+We are going to insert a mathematics equation inline here using a pair of \$ signs:    . As you can see, the display (such as line spacing) does not get messed up by the mathematics as it does with word processing softwares. 
+
+\subsection{Display Mode}
+We can also display equations in their own set of lines. To do this, we can use the equation environment. 
+
+%\begin{equation}\label{eq:emc}
+%
+%\end{equation}
+
+As you can see, \LaTeX\ inserts the equation number automatically. We can refer to it using the \verb|\ref| command just as we referred to sections, figures and tables. (E.g. Equation~\ref{eq:emc}.) To get rid of the equation number, simply use the \emph{star variant} of the equation environment. (For this, you need the \texttt{amsmath} package.)
+
+%\begin{equation*}
+%
+%\end{equation*}
+
+Alternatively, we can use the shorthand keys \verb|\[| and \verb|\]|
+
+
+
+\section{Mathematical Features}
+\LaTeX\ has many builtin features and you can get many more easily. Here, we'll see some of these features: 
+
+Addition, subtraction, multiplication and division: 
+
+
+Superscripts and subscripts: 
+
+
+
+Summation, union, intersection, big-union, integral: 
+
+
+
+Fractions, brackets, square root: 
+
+
+Greek letters: 
+
+
+
+Matrices and vectors. For this, you need to include the \texttt{amsmath} package and then use the \texttt{bmatrix} or \texttt{pmatrix} environment: 
+
+
+
+Accents: 
+
+
+
+See the \texttt{Math} menu in the IDE for other operations. You can refer to ``Short Math Guide for \LaTeX'' for a lot more examples. 
+
+\section{Using Symbols}
+You might come across situations where you need to find new symbols. For this, you can refer to the ``The Comprehensive \LaTeX Symbols List''.  
+
+
+
+
+
+(Optional) Since this is a long command, we might want to create a shortcut using the \verb|\newcommand| command in the preamble. This also allows us to later change the symbol without having to change the equations. 
+
+
+
+\end{document}

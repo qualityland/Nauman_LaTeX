@@ -1,0 +1,83 @@
+\documentclass{beamer}
+
+%\usetheme{Copenhagen}
+%\usetheme{AnnArbor}
+
+
+\usetheme[
+  outer/progressbar=foot,
+  outer/numbering=none
+]{metropolis}
+
+\usepackage{xcolor}
+
+\definecolor{Purple}{HTML}{911146}
+\setbeamercolor{frametitle}{bg=Purple}
+
+%\definecolor{Alternate}{HTML}{3366cc}
+%\setbeamercolor{frametitle}{bg=Alternate}
+
+%\usepackage[default]{sourcesanspro}
+\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+
+
+\title{Creating Polished Presentations}
+\date{Somewhere, Sometime.}
+\author{Nauman \\ recluze.wordpress.com}
+
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Outline}
+\tableofcontents 
+\end{frame}
+
+
+
+\section{Introduction} 
+
+\begin{frame}
+\frametitle{Intro and Background}
+Hello, world!
+\end{frame}
+
+
+\section{Methods} 
+\begin{frame}[t]{Top Aligned Frame}
+Some text 
+
+More text here 
+
+And even more text 
+\end{frame}
+
+
+\begin{frame}{Using Blocks for Focus}
+\begin{block}{Observation}
+	I'm a block! 
+\end{block}
+\end{frame}
+
+\begin{frame}{Making Content Appear}
+I'm going to be 
+
+\pause 
+
+broken down 
+
+\pause 
+
+in pieces ... 
+\end{frame}
+
+
+%only with metropolis 
+\begin{frame}[standout]
+Thank you!
+\end{frame}
+
+
+% Also show LaTeX Font Catalog 
+
+\end{document}
